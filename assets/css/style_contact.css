@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+nav {
+    height: 80px;
+    background: azure;
+}
+
+/* .container {
+    width: 80%;
+} */
+
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: lighter;
+    text-transform: lowercase;
+    padding: 20px 0;
+    color: black;
+    font-size: 36pt;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    clear: float;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+li {
+    float:left;
+    padding: 0 20px;
+    text-align: center;
+}
+
+a {
+    color:rgba(0,0,0,.5);
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    text-transform: lowercase;
+    font-size: 14pt;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,1)
+}
+
+p {
+    font-size: 12px;
+    line-height: 2pt;
+}
+
+.row {
+    height: auto;
+    margin: 0 auto;
+}
+
+#clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 14pt;
+    line-height: 1.75;
+    color: black;
+}
+
+.footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+i {
+    color: black;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+i:hover {
+    color: rgba(0,0,0,.5);
+}
