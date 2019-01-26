@@ -22,9 +22,9 @@ nav {
     background: azure;
 }
 
-/* .container {
-    width: 80%;
-} */
+.container-images {
+   margin-top: 35px;
+}
 
 h1 {
     font-family: "Cormorant Garamond", serif;
