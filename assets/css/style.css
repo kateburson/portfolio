@@ -4,13 +4,17 @@
 }
 
 html {
-    height: 100%;
+    min-height: 100%;
 }
+
+
 
 body {
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
+    background: linear-gradient(to top,rgb(179, 228, 228, .8), azure);
+    
 }
 
 .content {
@@ -18,19 +22,23 @@ body {
 }
 
 nav {
-    height: 80px;
-    background: azure;
+    height: auto;
+    padding: 25px;
+    
 }
 
+
+
 .container-images {
-   margin-top: 35px;
+   margin: 0 auto;
+   padding: 25px;
+   /* background-color: white; */
 }
 
 h1 {
     font-family: "Cormorant Garamond", serif;
     font-weight: lighter;
     text-transform: lowercase;
-    padding: 20px 0;
     color: black;
     font-size: 36pt;
     text-align: center;
@@ -46,12 +54,12 @@ ul {
 
 li {
     float:left;
-    padding: 0 20px;
+    margin: 0 15px;
     text-align: center;
 }
 
 a {
-    color:rgba(0,0,0,.5);
+    color: grey;
     text-decoration: none;
     font-family: "Cormorant Garamond", serif;
     text-transform: lowercase;
@@ -60,7 +68,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: rgba(0,0,0,1)
+    color: black;
 }
 
 p {
@@ -80,7 +88,41 @@ p {
 }
 
 figure {
+    background-color: black;
     margin-bottom: 35px;
+}
+
+.effect6
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect6:before, .effect6:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect6:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
 }
 
 p {
@@ -129,10 +171,16 @@ figure.effect-lily img {
 }
 
 figure.effect-lily figcaption {
-    color: black;
+    color: white;
     font-size: 18pt;
     font-family: "Cormorant Garamond", serif;
+    font-weight: normal;
     text-align: left;
+}
+
+.fig {
+    color:white;
+    font-weight: normal;
 }
 
 figure.effect-lily figcaption > div {
@@ -141,7 +189,7 @@ figure.effect-lily figcaption > div {
     left: 0;
     padding: 2em;
     width: 100%;
-    height: 75%;
+    height: 90%;
 }
 
 figure.effect-lily h2,
@@ -153,10 +201,11 @@ figure.effect-lily a {
 
 figure.effect-lily h2 {
     opacity: 0;
-    font-weight: bold;
+    font-weight: lighter;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
 }
+
 
 figure.effect-lily p,
 figure.effect-lily a {
@@ -167,6 +216,8 @@ figure.effect-lily a {
     transition: opacity 0.2s, transform 0.35s;
 }
 
+
+
 figure.effect-lily:hover img { 
     opacity: .2;
     -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
@@ -176,9 +227,14 @@ figure.effect-lily:hover img {
 figure.effect-lily:hover p,
 figure.effect-lily:hover h2,
 figure.effect-lily:hover a {
+    color: white;
     opacity: 1;
     -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
     transition: opacity 0.2s, transform 0.35s;
+}
+
+.grey:hover {
+    color: grey;
 }
 
 figure.effect-lily:hover img,
