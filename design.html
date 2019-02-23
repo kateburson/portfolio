@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="jquery-3.3.1.min.js"></script>
+    <!-- <script src="jquery-3.3.1.min.js"></script> -->
 
 </head>
 
@@ -25,13 +25,51 @@
                 <ul>
                     <li><a href="index.html">Web</a></li>
                     <li><a>+</a></li>
-                    <li><a href="design.html">Design</a></li>
+                    <!-- <li><a href="design.html">Design</a></li>
+                    <li><a>+</a></li> -->
+                    <li><a href="about.html">About</a></li>
                     <li><a>+</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">Contact</a></li>
                 </ul>
 
             </div>
         </nav>
+
+    <!-- modal for contact form -->
+    <div class="modal fade modalContactForm" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <div id="box-header">
+                    <h2>Contact</h2>
+                    <hr>
+                </div> <!--box-header-->
+                <!-- <div class="form col-lg-4 contact"> -->
+                    <br>
+                    <section>
+                        <p class="label">Name</p><br>
+                        <input type="text" class="standard_input">
+                    </section>
+                    <br>
+                    <section>
+                        <p class="label">Email</p><br>
+                        <input type="text" class="standard_input">
+                    </section>
+                    <br>
+                    <section>
+                        <p class="label">Message</p><br>
+                        <textarea type="text" id="message" class="standard_input"></textarea>
+                    </section>
+                    <br>
+                    <section>
+                        <input id="button" type="submit" value="Submit">
+                    </section>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
         
         <div class="container col-lg-10">
 
@@ -121,7 +159,7 @@
 
         <footer class="footer col-lg-10">
     
-                <div id="copyright"><p>Copyright © 2019</p></div>
+                <div id="copyright"><p>Copyright © 2019 Kate Burson</p></div>
 
                 <div id="social">
                     <a href="https://www.instagram.com/kateburson/" target="new">
@@ -133,6 +171,15 @@
                 </div>
 
         </footer>
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
                 
 </body>
 
