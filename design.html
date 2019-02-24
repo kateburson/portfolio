@@ -18,22 +18,25 @@
 
 <body> 
 
-        <nav>
-            <h1 href="index.html">Kate Burson</h1>
-            <div class="container col-lg-10 nav">
-                
-                <ul>
-                    <li><a href="index.html">Web</a></li>
-                    <li><a>+</a></li>
-                    <!-- <li><a href="design.html">Design</a></li>
-                    <li><a>+</a></li> -->
-                    <li><a href="about.html">About</a></li>
-                    <li><a>+</a></li>
-                    <li><a href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">Contact</a></li>
-                </ul>
+    <header>
+        <a href="index.html"> <h1>Kate Burson</h1></a>
+    </header>
+            
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <p>menu +</p>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+            <a class="nav-item nav-link" href="index.html">web</span></a>
+            <a class="nav-item nav-link" href="design.html">design</a>
+            <a class="nav-item nav-link" href="about.html">about</a>
+            <a class="nav-item nav-link" href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">contact</a>
             </div>
-        </nav>
+        </div>
+    </nav>
+
 
     <!-- modal for contact form -->
     <div class="modal fade modalContactForm" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">
