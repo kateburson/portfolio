@@ -17,13 +17,14 @@ body {
 }
 
 header {
-    padding: 25px; 
+    padding: 40px 0 25px 0; 
     margin: 0; 
 }
 
 nav {
     height: auto;
     margin-top: -25px;
+    margin-bottom: 25px;
     background-color: rgba(0,0,0,0);
 }
 
@@ -79,7 +80,7 @@ nav {
 }
 
 .standard_input {
-    margin-top: -20px;
+    margin-top: -25px;
     float: right;
     width: 75%;
     border: rgb(179, 228, 228, .8) solid 1pt;
@@ -134,6 +135,7 @@ button {
     /* margin-top: 25px; */
     width: 80%;
 }
+
 
 h1 {
     font-family: "Cormorant Garamond", serif;
