@@ -12,8 +12,6 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- <script src="jquery-3.3.1.min.js"></script> -->
-
 </head>
 
 <body> 
@@ -30,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav mx-auto">
             <a class="nav-item nav-link" href="index.html">web</span></a>
-            <a class="nav-item nav-link" href="design.html">design</a>
+            <!-- <a class="nav-item nav-link" href="design.html">design</a> -->
             <a class="nav-item nav-link" href="about.html">about</a>
             <a class="nav-item nav-link" href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">contact</a>
             </div>
@@ -49,27 +47,33 @@
                     <h2>Contact</h2>
                     <hr>
                 </div> <!--box-header-->
-                <!-- <div class="form col-lg-4 contact"> -->
+                <div id="form-messages"></div>
+                <form id="ajax-contact" method="post" action="assets/mailer.php">
                     <br>
                     <section>
-                        <p class="label">Name</p><br>
-                        <input type="text" class="standard_input">
+                        <label for="name" class="label">Name</label><br>
+                        <input type="text" id="name" class="standard_input">
                     </section>
                     <br>
                     <section>
-                        <p class="label">Email</p><br>
-                        <input type="text" class="standard_input">
+                        <label for="email" class="label">Email</label><br>
+                        <input type="text" id="email" class="standard_input">
                     </section>
                     <br>
                     <section>
-                        <p class="label">Message</p><br>
+                        <label for="subject" class="label">subject</label><br>
+                        <input type="text" id="subject" class="standard_input" required>
+                    </section>
+                    <br>
+                    <section>
+                        <label for="message" class="label">Message</label><br>
                         <textarea type="text" id="message" class="standard_input"></textarea>
                     </section>
                     <br>
                     <section>
-                        <input id="button" type="submit" value="Submit">
+                        <button id="button" type="submit">submit</button>
                     </section>
-                <!-- </div> -->
+                </form>
             </div>
         </div>
     </div>
@@ -180,7 +184,12 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
+        <script type="text/javascript" src="assets/jquery.ajax-cross-origin.min.js"></script>
+
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+        <script src="assets/send.js"></script>
+
 
 
                 

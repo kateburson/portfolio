@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="assets/css/style_contact.css">
-</head>
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Contact</title>
+    <title>Kate Burson: About</title>
     
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Cormorant+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lato" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style_about.css">
-    <!-- <script src="jquery-3.3.1.min.js"></script> -->
 
 </head>
-<body>
 
+<body> 
     <header>
-        <a href="index.html"> <h1>Kate Burson</h1></a>
+       <a href="index.html"> <h1>Kate Burson</h1></a>
     </header>
-            
+    
     <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <p>menu +</p>
@@ -32,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav mx-auto">
             <a class="nav-item nav-link" href="index.html">web</span></a>
-            <a class="nav-item nav-link" href="design.html">design</a>
+            <!-- <a class="nav-item nav-link" href="design.html">design</a> -->
             <a class="nav-item nav-link" href="about.html">about</a>
             <a class="nav-item nav-link" href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">contact</a>
             </div>
@@ -50,41 +47,47 @@
                     <h2>Contact</h2>
                     <hr>
                 </div> <!--box-header-->
-                <!-- <div class="form col-lg-4 contact"> -->
+                <div id="form-messages"></div>
+                <form id="ajax-contact" method="post" action="assets/mailer.php">
                     <br>
                     <section>
-                        <p class="label">Name</p><br>
-                        <input type="text" class="standard_input">
+                        <label for="name" class="label">Name</label><br>
+                        <input type="text" id="name" class="standard_input">
                     </section>
                     <br>
                     <section>
-                        <p class="label">Email</p><br>
-                        <input type="text" class="standard_input">
+                        <label for="email" class="label">Email</label><br>
+                        <input type="text" id="email" class="standard_input">
                     </section>
                     <br>
                     <section>
-                        <p class="label">Message</p><br>
+                        <label for="subject" class="label">subject</label><br>
+                        <input type="text" id="subject" class="standard_input" required>
+                    </section>
+                    <br>
+                    <section>
+                        <label for="message" class="label">Message</label><br>
                         <textarea type="text" id="message" class="standard_input"></textarea>
                     </section>
                     <br>
                     <section>
-                        <input id="button" type="submit" value="Submit">
+                        <button id="button" type="submit">submit</button>
                     </section>
-                <!-- </div> -->
+                </form>
             </div>
         </div>
     </div>
         
     <div class="row container-fluid">
         <div class="col-lg-4">
-            <img class="shadow" src="assets/images/me.png" alt="portrait">
+            <img class="shadow" src="assets/images/IMG_E0734.jpg" alt="portrait">
         </div>
         <div class="about col-lg-8 about">
             <div id="box-header">
                 <h2>About</h2>
                 <hr>
             </div> <!--box-header-->
-            <p>I'm Kate, a web developer, graphic designer, and aspiring minimalist. I thoroughly enjoy simplicity and I believe in things that stand the test of time, not those that merely subscribe to the latest trend. I prioritize functionality and let the aesthetics follow suit. We live in an ever-changing world where efficiency is of utmost importance; I strive to make my designs both beautiful and effective, whether they be for print, web, or anything else. Feel free to contact me for job inquiries.</p>
+            <p>I'm Kate, a web developer and graphic designer. I thoroughly enjoy things of quality, things with stories, and I believe in things that stand the test of time, not those that merely subscribe to the latest trend. I prioritize functionality without sacrificing aesthetics and character. We live in an ever-changing world where efficiency is of utmost importance; I strive to make my designs beautiful, timely, and effective, whether they be for print, web, or anything else. Feel free to contact me with questions or job inquiries.</p>
 
         </div>
     </div>
@@ -111,6 +114,10 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     
+    <script type="text/javascript" src="assets/jquery.ajax-cross-origin.min.js"></script>
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="assets/send.js"></script>
 
 </body>
