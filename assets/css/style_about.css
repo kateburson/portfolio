@@ -8,7 +8,16 @@ html {
 
 .about {
     float: right;
-    margin-top: 15px;
+    margin: 15px auto;
+}
+
+.insta {
+    float: left;
+    margin-bottom: 30px;
+}
+
+#gallery {
+    margin: 0 auto;
 }
 
 img {
