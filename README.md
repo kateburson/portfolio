@@ -1,3 +1,3 @@
 # Portfolio
 
-https://www.kateburson.github.io/portfolio
+https://kateburson.github.io/portfolio/
