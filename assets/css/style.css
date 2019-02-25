@@ -103,7 +103,14 @@ nav {
 }
 
 button {
-    margin-top: 25px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: lighter;
+    text-transform: lowercase;
+    font-size: 14pt;
+}
+
+#submit {
+    margin-top: 50px;
     width: 100%;
     background-color: rgb(179, 228, 228, 0);
     border: black solid 1pt;
@@ -114,11 +121,11 @@ button {
     font-size: 14pt;
 }
 
-button:hover {
+#submit:hover {
     background-color: rgb(179, 228, 228, .5);
 }
 
-button:focus {
+#submit:focus, button:focus {
     outline: none;
     box-shadow: none;
 }
