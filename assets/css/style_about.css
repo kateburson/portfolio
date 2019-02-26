@@ -57,3 +57,15 @@ img {
          -o-transform:skew(8deg) rotate(3deg);
             transform:skew(8deg) rotate(3deg);
 }
+
+@media (min-width: 768px) {
+    .container-fluid { 
+        width: 90%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container-fluid { 
+        width: 100%;
+    }
+}
