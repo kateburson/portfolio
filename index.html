@@ -47,7 +47,7 @@
                     <hr>
                 </div> <!--box-header-->
                 <div id="form-messages"></div>
-                <form id="ajax-contact" method="post" action="assets/mailer.php">
+                <form method="post" action="POST" data-netlify="true">
                     <br>
                     <section>
                         <label for="name" class="label">Name</label><br>
@@ -71,6 +71,7 @@
                     <br>
                     <section>
                         <button id="submit">submit</button>
+                        <div data-netlify-recaptcha="true"></div>
                     </section>
                 </form>
             </div>
