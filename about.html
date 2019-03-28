@@ -75,35 +75,27 @@
                         </div>
                     </div>
                 </form> -->
-                <form name="contact" method="POST" data-netlify="true">
-                        <div>
-                            <label class="label">name </label><br>
-                            <input id="name" type="text" name="name" class="standard_input"/>
-                        </div>
-                        <br>
-                        <div>
-                            <label class="label">email </label><br>
-                            <input id="email" type="email" name="email" class="standard_input"/>
-                        </div>
-                        <br>
-                        <div>
-                            <label class="label">subject </label><br>
-                            <input id="subject" type="text" name="subject" class="standard_input">
-                            </input>
-                        </div>
-                        <br>
-                        <div>
-                            <label class="label">message </label><br>
-                            <textarea id="message" name="message" class="standard_input"></textarea>
-                        </div>
-                        <br>
-                        <div>
-                            <input id ="submit" type="submit">send</input>
-                            <div class="field">
-                                <div data-netlify-recaptcha="true"></div>
-                            </div>
-                        </div>
-                    </form>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>name <input id="name" type="text" name="name" /></label>   
+                </p>
+                <p>
+                    <label>email <input id="email" type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>subject <input id="subject" type="text" name="subject">
+                    </input></label>
+                </p>
+                <p>
+                    <label>message <textarea id="message" name="message"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">send</button>
+                    <div class="field">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                </p>
+            </form>
             </div>
         </div>
     </div>
