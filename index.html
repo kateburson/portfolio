@@ -47,7 +47,7 @@
                     <hr>
                 </div> <!--box-header-->
                 <div id="form-messages"></div>
-                <form method="post" action="POST" data-netlify="true">
+                <!-- <form method="post" action="POST" data-netlify="true">
                     <br>
                     <section>
                         <label for="name" class="label">name<input type="text" id="name" class="standard_input"></label>
@@ -73,6 +73,27 @@
                             <div data-netlify-recaptcha="true"></div>
                         </div>
                     </section>
+                </form> -->
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                        <label>name <input id="name" type="text" name="name" /></label>   
+                    </p>
+                    <p>
+                        <label>email <input id="email" type="email" name="email" /></label>
+                    </p>
+                    <p>
+                        <label>subject <input id="subject" type="text" name="subject">
+                        </input></label>
+                    </p>
+                    <p>
+                        <label>message <textarea id="message" name="message"></textarea></label>
+                    </p>
+                    <p>
+                        <button type="submit">send</button>
+                        <div class="field">
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+                    </p>
                 </form>
             </div>
         </div>
