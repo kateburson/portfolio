@@ -1,250 +1,229 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Kate Burson: About</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lato" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<title>Kate Burson: About</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lato" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style_about.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style_about.css">
 
 </head>
 
 <body> 
-    <header>
-       <a href="index.html"> <h1>Kate Burson</h1></a>
-    </header>
-    
-    <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler menu" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <p id="menu">menu +</p>
-        </button>
+<header>
+    <a href="index.html"> <h1>Kate Burson</h1></a>
+</header>
 
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mx-auto">
-            <a class="nav-item nav-link" href="index.html">web</span></a>
-            <a class="nav-item nav-link" href="design.html">design</a>
-            <a class="nav-item nav-link" href="about.html">about</a>
-            <a class="nav-item nav-link" href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">contact</a>
-            </div>
+<nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler menu" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <p id="menu">menu +</p>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+        <a class="nav-item nav-link" href="index.html">web</span></a>
+        <a class="nav-item nav-link" href="design.html">design</a>
+        <a class="nav-item nav-link" href="about.html">about</a>
+        <a class="nav-item nav-link" href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">contact</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- modal for contact form -->
-    <div class="modal fade modalContactForm" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-                <div id="box-header">
-                    <h2>contact</h2>
-                    <hr>
-                </div> <!--box-header-->
-                <div id="form-messages"></div>
-                <!-- <form method="post" action="POST" data-netlify="true">
-                    <br>
-                    <div>
-                        <label for="name" class="label">name<input type="text" id="name" class="standard_input"></label>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="email" class="label">email<input type="text" id="email" class="standard_input"></label>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="subject" class="label">subject<input type="text" id="subject" class="standard_input" required>
-                        </label>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="message" class="label">Message<textarea type="text" id="message" class="standard_input"></textarea></label>
-                    </div>
-                    <br>
-                    <div>
-                        <input id="submit" type="submit"></input>
-                        <br>
-                        <div class="field">
-                            <div data-netlify-recaptcha="true"></div>
-                        </div>
-                    </div>
-                </form> -->
+<!-- modal for contact form -->
+<div class="modal fade modalContactForm" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <div id="box-header">
+                <h2>contact</h2>
+                <hr>
+            </div> <!--box-header-->
+            <div id="form-messages"></div>
+            
             <form name="contact" method="POST" data-netlify="true">
                 <p>
-                    <label>name <input id="name" type="text" name="name" /></label>   
+                    <label for="name" class="label">name</label><br>
+                    <input id="name" type="text" name="name" class="standard_input"/> 
                 </p>
                 <p>
-                    <label>email <input id="email" type="email" name="email" /></label>
+                    <label for="email" class="label">email</label><br>
+                    <input id="email" type="email" name="email" class="standard_input"/>
                 </p>
                 <p>
-                    <label>subject <input id="subject" type="text" name="subject">
-                    </input></label>
+                    <label for="subject" class="label">subject</label><br>
+                    <input id="subject" type="text" name="subject" class="standard_input"/>
                 </p>
                 <p>
-                    <label>message <textarea id="message" name="message"></textarea></label>
+                    <label for="message" class="label">message</label><br>
+                    <textarea id="message" name="message" class="standard_input"></textarea>
                 </p>
                 <p>
-                    <button type="submit">send</button>
+                    <button type="submit" id="submit">send</button>
                     <div class="field">
                         <div data-netlify-recaptcha="true"></div>
                     </div>
                 </p>
             </form>
-            </div>
         </div>
     </div>
+</div>
 
-    <div class="row container-fluid">
-        <div class="col-lg-10 col-md-10 col-sm-12 col-12" id="gallery">
-            
-            <div class="row">
-                <div class="col-xl-5 col-lg-4 col-md-4 insta">
-                    <img class="shadow" src="assets/images/IMG_E0734.jpg">
-                </div>
-
-                <div class="col-xl-7 col-lg-8 col-md-8 insta">
-                    <h2>I'm Kate, a web developer and graphic designer.</h2>
-                    <hr>
+<div class="row container-fluid">
+    <div class="col-lg-10 col-md-10 col-sm-12 col-12" id="gallery">
         
-                    <p>I thoroughly enjoy things of quality, things with stories, and I believe in things that stand the test of time, not those that merely subscribe to the latest trend. I prioritize functionality without sacrificing aesthetics and character. We live in an ever-changing world where efficiency is of utmost importance; I strive to make my designs beautiful, timely, and effective, whether they be for print, web, or anything else. Feel free to contact me with questions or job inquiries.</p>
-                    <p><a href="assets/images/Resume_web.pdf" target="new">view resume</a></p>
+        <div class="row">
+            <div class="col-xl-5 col-lg-4 col-md-4 insta">
+                <img class="shadow" src="assets/images/IMG_E0734.jpg">
+            </div>
+
+            <div class="col-xl-7 col-lg-8 col-md-8 insta">
+                <h2>I'm Kate, a web developer and graphic designer.</h2>
+                <hr>
+    
+                <p>I thoroughly enjoy things of quality, things with stories, and I believe in things that stand the test of time, not those that merely subscribe to the latest trend. I prioritize functionality without sacrificing aesthetics and character. We live in an ever-changing world where efficiency is of utmost importance; I strive to make my designs beautiful, timely, and effective, whether they be for print, web, or anything else. Feel free to contact me with questions or job inquiries.</p>
+                <p><a href="assets/images/Resume_web.pdf" target="new">view resume</a></p>
+            </div>
+        </div>
+        
+        <div class="row">
+
+            <div class="col-xl-4 col-lg-6 col-md-4 insta">
+                <img class="shadow" src="assets/images/pichincha.jpg">
+            </div> 
+
+            <div class="col-xl-4 col-lg-6 col-md-4 insta">
+                <img class="shadow" src="assets/images/IMG_3338.jpg">
+            </div>    
+
+            <div class="col-xl-4 col-lg-6 col-md-4 insta">
+                <img class="shadow" src="assets/images/calflowers.jpg">
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-4">
+                    <h2>education</h2>
+                    <hr>
+                    <p><b>Full Stack Coding Bootcamp, UC Davis; Sacramento, CA – 2019</b></p>
+                    <p><b>BA Digital Design, Seattle University; Seattle, WA – 2016</b></p>
+                    <!-- <p>+  Graduated Cum Laude</p>
+                    <p>+  Minor in Business Administration</p> -->
                 </div>
+
+            <div class="col-xl-8 col-lg-12 col-md-8 insta">
+                <img class="shadow" src="assets/images/dark.moody.backlit.JPG" alt="portrait">
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <img class="shadow insta" src="assets/images/IMG_2312.jpg" alt="portrait">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <img class="shadow insta" src="assets/images/IMG_2842.jpg" alt="portrait">
             </div>
             
-            <div class="row">
 
-                <div class="col-xl-4 col-lg-6 col-md-4 insta">
-                    <img class="shadow" src="assets/images/pichincha.jpg">
-                </div> 
-
-                <div class="col-xl-4 col-lg-6 col-md-4 insta">
-                    <img class="shadow" src="assets/images/IMG_3338.jpg">
-                </div>    
-
-                <div class="col-xl-4 col-lg-6 col-md-4 insta">
-                    <img class="shadow" src="assets/images/calflowers.jpg">
-                </div>
-
-                <div class="col-xl-4 col-lg-6 col-md-4">
-                        <h2>education</h2>
-                        <hr>
-                        <p><b>Full Stack Coding Bootcamp, UC Davis; Sacramento, CA – 2019</b></p>
-                        <p><b>BA Digital Design, Seattle University; Seattle, WA – 2016</b></p>
-                        <!-- <p>+  Graduated Cum Laude</p>
-                        <p>+  Minor in Business Administration</p> -->
-                    </div>
-
-                <div class="col-xl-8 col-lg-12 col-md-8 insta">
-                    <img class="shadow" src="assets/images/dark.moody.backlit.JPG" alt="portrait">
-                </div>
-
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <img class="shadow insta" src="assets/images/IMG_2312.jpg" alt="portrait">
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <img class="shadow insta" src="assets/images/IMG_2842.jpg" alt="portrait">
-                </div>
+            <div class="col-xl-8 col-lg-12 insta">
+                <h2>experience</h2>
+                <hr>
+                <!-- <p><b>Sales Leader, Pier 1 Imports; Folsom, California – February 2018–Present</b></p>
+                <p>+  Delegating tasks and keeping track of employee breaks</p>
+                <p>+  Visually merchandising, pricing, and maintaining a clean and safe shopping environment</p>
+                <p>+  Assisting customers with merchandise questions and providing decorating options</p> -->
+                <p><b>Freelance Graphic Designer; Sacramento, California – January 2018–Present</b></p>
+                <p>+  Completed projects primarily involving personal branding, print mailing, and logo design</p>
+                <p>+  Learned and honed business management and organizational skills</p>
+                <!-- <p><b>Bike Courier, Caviar; Seattle, Washington – April 2016-November 2017</b></p>
+                <p>+  Delivered food from restaurants around the city to customers homes and gained
+                        experience working hard and working on a timeline</p> -->
+                <p><b>Graphic Designer, Kasala; Seattle, Washington – July 2016–August 2017</b></p>
+                <p>+  Created all digital media, including digital advertisements and website design elements</p>
+                <p>+  Tracked the performance of digital ad campaigns with Google Analytics and evaluated
+                        which aesthetic styles were most effective</p>
+                <p>+  Collaborated with the creative director on print materials such as sale catalogs, look
+                        books, print advertisements, and store signage</p>
                 
+            </div>
+    
 
-                <div class="col-xl-8 col-lg-12 insta">
-                    <h2>experience</h2>
-                    <hr>
-                    <!-- <p><b>Sales Leader, Pier 1 Imports; Folsom, California – February 2018–Present</b></p>
-                    <p>+  Delegating tasks and keeping track of employee breaks</p>
-                    <p>+  Visually merchandising, pricing, and maintaining a clean and safe shopping environment</p>
-                    <p>+  Assisting customers with merchandise questions and providing decorating options</p> -->
-                    <p><b>Freelance Graphic Designer; Sacramento, California – January 2018–Present</b></p>
-                    <p>+  Completed projects primarily involving personal branding, print mailing, and logo design</p>
-                    <p>+  Learned and honed business management and organizational skills</p>
-                    <!-- <p><b>Bike Courier, Caviar; Seattle, Washington – April 2016-November 2017</b></p>
-                    <p>+  Delivered food from restaurants around the city to customers homes and gained
-                            experience working hard and working on a timeline</p> -->
-                    <p><b>Graphic Designer, Kasala; Seattle, Washington – July 2016–August 2017</b></p>
-                    <p>+  Created all digital media, including digital advertisements and website design elements</p>
-                    <p>+  Tracked the performance of digital ad campaigns with Google Analytics and evaluated
-                            which aesthetic styles were most effective</p>
-                    <p>+  Collaborated with the creative director on print materials such as sale catalogs, look
-                            books, print advertisements, and store signage</p>
-                    
-                </div>
-        
+            <div class="col-xl-12 col-lg-12 insta">
+                <img class="shadow" src="assets/images/croatiaPortfolio.jpg" alt="portrait">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 insta">
+                <img class="shadow" src="assets/images/DSC_0547.jpg" alt="portrait">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 insta">
+                <img class="shadow" src="assets/images/DSC_0566.jpg" alt="portrait">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 insta">
+                <img class="shadow" src="assets/images/DSC_0576.jpg" alt="portrait">
+            </div>
 
-                <div class="col-xl-12 col-lg-12 insta">
-                    <img class="shadow" src="assets/images/croatiaPortfolio.jpg" alt="portrait">
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 insta">
-                    <img class="shadow" src="assets/images/DSC_0547.jpg" alt="portrait">
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 insta">
-                    <img class="shadow" src="assets/images/DSC_0566.jpg" alt="portrait">
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 insta">
-                    <img class="shadow" src="assets/images/DSC_0576.jpg" alt="portrait">
-                </div>
-
-                <div class="col-xl-4 col-lg-12 col-md-4 insta">
-                    <h2>skills</h2>
-                    <hr>
-                    <p><b>Web Development</b></p>
-                    <p>+  HTML</p>
-                    <p>+  CSS, Bootstrap, CSS grid</p>
-                    <p>+  Javascript & JQuery</p>
-                    <p>+  Node.js</p>
-                    <p>+  RESTful API's</p>
-                    <p>+  Firebase</p>
-                    <p><b>Graphic Design</b></p>
-                    <p>+  Adobe Photoshop, Illustrator, InDesign</p>
-                    <p>+  Typography</p>
-                    <p>+  Branding</p>
-                    <!-- <p><b>General</b></p>
-                    <p>+  Microsoft Word, PowerPoint, Excel</p>
-                    <p>+  Google Analytics</p>
-                    <p>+  WordPress</p>
-                    <p>+  Shopify</p>
-                    <p>+  MailChimp</p> -->
-                </div>
-                <div class="col-xl-8 col-lg-12 col-md-8 insta">
-                    <img class="shadow" src="assets/images/IMG_6248.jpg" alt="portrait">
-                </div>
-                <div class="col-xl-12 col-lg-12 insta">
-                    <img width="100%" class="shadow" src="assets/images/DSC_0008.png" alt="portrait">
-                </div>
+            <div class="col-xl-4 col-lg-12 col-md-4 insta">
+                <h2>skills</h2>
+                <hr>
+                <p><b>Web Development</b></p>
+                <p>+  HTML</p>
+                <p>+  CSS, Bootstrap, CSS grid</p>
+                <p>+  Javascript & JQuery</p>
+                <p>+  Node.js</p>
+                <p>+  RESTful API's</p>
+                <p>+  Express</p>
+                <p>+  MYSQL</p>
+                <p>+  Firebase</p>
+                <p><b>Graphic Design</b></p>
+                <p>+  Adobe Photoshop, Illustrator, InDesign</p>
+                <p>+  Typography</p>
+                <p>+  Branding</p>
+                <!-- <p><b>General</b></p>
+                <p>+  Microsoft Word, PowerPoint, Excel</p>
+                <p>+  Google Analytics</p>
+                <p>+  WordPress</p>
+                <p>+  Shopify</p>
+                <p>+  MailChimp</p> -->
+            </div>
+            <div class="col-xl-8 col-lg-12 col-md-8 insta">
+                <img class="shadow" src="assets/images/IMG_6248.jpg" alt="portrait">
+            </div>
+            <div class="col-xl-12 col-lg-12 insta">
+                <img width="100%" class="shadow" src="assets/images/DSC_0008.png" alt="portrait">
             </div>
         </div>
     </div>
+</div>
 
-    
 
-    <footer class="footer col-lg-10">
-    
-        <div id="copyright"><p>Copyright © 2019 Kate Burson</p></div>
 
-        <div id="social">
-            <a href="https://www.instagram.com/kateburson/" target="new">
-                <i class="fab fa-instagram" alt="instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/kate-burson/" target="new">
-                <i class="fab fa-linkedin-in" alt="linkedin"></i>
-            </a>
-        </div>
+<footer class="footer col-lg-10">
 
-    </footer>
+    <div id="copyright"><p>Copyright © 2019 Kate Burson</p></div>
 
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    
-    <script type="text/javascript" src="assets/jquery.ajax-cross-origin.min.js"></script>
-    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <div id="social">
+        <a href="https://www.instagram.com/kateburson/" target="new">
+            <i class="fab fa-instagram" alt="instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/kate-burson/" target="new">
+            <i class="fab fa-linkedin-in" alt="linkedin"></i>
+        </a>
+    </div>
 
-    <script src="assets/send.js"></script>
+</footer>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="assets/jquery.ajax-cross-origin.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="assets/effects.js"></script>
 
 </body>
