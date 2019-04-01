@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav mx-auto">
             <a class="nav-item nav-link" href="index.html">web</span></a>
-            <!-- <a class="nav-item nav-link" href="design.html">design</a> -->
+            <a class="nav-item nav-link" href="design.html">design</a>
             <a class="nav-item nav-link" href="about.html">about</a>
             <a class="nav-item nav-link" href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">contact</a>
             </div>
@@ -77,20 +77,23 @@
                 </form> -->
                 <form name="contact" method="POST" data-netlify="true">
                         <p>
-                            <label>name <input id="name" type="text" name="name" /></label>   
+                            <label for="name" class="label">name</label><br>
+                            <input id="name" type="text" name="name" class="standard_input"/> 
                         </p>
                         <p>
-                            <label>email <input id="email" type="email" name="email" /></label>
+                            <label for="email" class="label">email</label><br>
+                            <input id="email" type="email" name="email" class="standard_input"/>
                         </p>
                         <p>
-                            <label>subject <input id="subject" type="text" name="subject">
-                            </input></label>
+                            <label for="subject" class="label">subject</label><br>
+                            <input id="subject" type="text" name="subject" class="standard_input"/>
                         </p>
                         <p>
-                            <label>message <textarea id="message" name="message"></textarea></label>
+                            <label for="message" class="label">message</label><br>
+                            <textarea id="message" name="message" class="standard_input"></textarea>
                         </p>
                         <p>
-                            <button type="submit">send</button>
+                            <button type="submit" id="submit">send</button>
                             <div class="field">
                                 <div data-netlify-recaptcha="true"></div>
                             </div>
