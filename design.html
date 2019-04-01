@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Kate Burson: Portfolio</title>
 
@@ -15,11 +16,10 @@
 </head>
 
 <body> 
-
 <header>
     <a href="index.html"> <h1>Kate Burson</h1></a>
 </header>
-        
+
 <nav class="navbar navbar-expand-lg">
     <button class="navbar-toggler menu" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <p id="menu">menu +</p>
@@ -35,7 +35,6 @@
     </div>
 </nav>
 
-
 <!-- modal for contact form -->
 <div class="modal fade modalContactForm" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -50,51 +49,52 @@
             <div id="form-messages"></div>
             
             <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                        <label for="name" class="label">name</label><br>
-                        <input id="name" type="text" name="name" class="standard_input"/> 
-                    </p>
-                    <p>
-                        <label for="email" class="label">email</label><br>
-                        <input id="email" type="email" name="email" class="standard_input"/>
-                    </p>
-                    <p>
-                        <label for="subject" class="label">subject</label><br>
-                        <input id="subject" type="text" name="subject" class="standard_input"/>
-                    </p>
-                    <p>
-                        <label for="message" class="label">message</label><br>
-                        <textarea id="message" name="message" class="standard_input"></textarea>
-                    </p>
-                    <p>
-                        <button type="submit" id="submit">send</button>
-                        <div class="field">
-                            <div data-netlify-recaptcha="true"></div>
-                        </div>
-                    </p>
-                </form>
+                <p>
+                    <label for="name" class="label">name</label><br>
+                    <input id="name" type="text" name="name" class="standard_input"/> 
+                </p>
+                <p>
+                    <label for="email" class="label">email</label><br>
+                    <input id="email" type="email" name="email" class="standard_input"/>
+                </p>
+                <p>
+                    <label for="subject" class="label">subject</label><br>
+                    <input id="subject" type="text" name="subject" class="standard_input"/>
+                </p>
+                <p>
+                    <label for="message" class="label">message</label><br>
+                    <textarea id="message" name="message" class="standard_input"></textarea>
+                </p>
+                <p>
+                    <button type="submit" id="submit">send</button>
+                    <div class="field">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                </p>
+            </form>
         </div>
     </div>
 </div>
     
-    <div class="container col-lg-10">
+    <div class="container-fluid col-lg-10">
 
         <div class="row">
 
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                 <figure class="effect-lily effect6">
                     <img  src="assets/images/footprint.jpg" alt="Footprint project"/>
                     <figcaption>
                         <div>
                             <h2>Footprint</h2>
-                            <p>national park excusursion planner</p>
+                            <p>national park excursion planner</p>
                             <a class="grey" target="new" href="https://kateburson.github.io/footprint/">View Project</a>
+                            <a class="grey" target="new" href="https://github.com/kateburson/footprint.git">+ View Code</a>
                         </div>
                     </figcaption>           
                 </figure>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                 <figure class="effect-lily effect6">
                     <img  src="assets/images/giftastic.jpg" alt="img1"/>
                     <figcaption>
@@ -102,12 +102,13 @@
                             <h2>Verb</h2>
                             <p>verb-themed gif search utilizing the giphy api</p>
                             <a class="grey" target="new" href="https://kateburson.github.io/giftastic">View Project</a>
+                            <a class="grey" target="new" href="https://github.com/kateburson/giftastic.git">+ View Code</a>
                         </div>
                     </figcaption>           
                 </figure>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                 <figure class="effect-lily effect6">
                     <img  src="assets/images/seattleTrivia.jpg" alt="img1"/>
                     <figcaption>
@@ -115,25 +116,27 @@
                             <h2>Seattle Trivia</h2>
                             <p>trivia game created using javascript with timers</p>
                             <a class="grey" target="new" href="https://kateburson.github.io/TriviaGame/">View Project</a>
+                            <a class="grey" target="new" href="https://github.com/kateburson/TriviaGame.git">+ View Code</a>
                         </div>
                     </figcaption>           
                 </figure>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                 <figure class="effect-lily effect6">
                     <img src="assets/images/ndwg.jpg" alt="img1"/>
                     <figcaption>
                         <div>
-                            <h2>Napoleon Dynamite <br> Word Guess</h2>
+                            <h2>Word Guess</h2>
                             <p>hangman style game created using javascript</p>
                             <a class="grey" target="new" href="https://kateburson.github.io/word-guess-game/">View Project</a>
+                            <a class="grey" target="new" href="https://github.com/kateburson/word-guess-game.git">+ View Code</a>
                         </div>
                     </figcaption>           
                 </figure>
             </div>
                     
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                 <figure class="effect-lily effect6">
                     <img  src="assets/images/crystalCollector.jpg" alt="img1"/>
                     <figcaption>
@@ -141,12 +144,13 @@
                             <h2>Crystal Collector</h2>
                             <p>number game creating using jQuery on-click events</p>
                             <a class="grey" target="new" href="https://kateburson.github.io/unit-4-game/">View Project</a>
+                            <a class="grey" target="new" href="https://github.com/kateburson/unit-4-game.git">+ View Code</a>
                         </div>
                     </figcaption>           
                 </figure>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                 <figure class="effect-lily effect6">
                     <img src="assets/images/DSC_0605.jpg" alt="Rock Paper Diss"/>
                     <figcaption>
@@ -154,29 +158,43 @@
                             <h2>Rock. Paper. Diss</h2>
                             <p>rock paper scissors style multiplayer game</p>
                             <a class="grey" target="new" href="https://kateburson.github.io/rps-multiplayer/">View Project</a>
+                            <a class="grey" target="new" href="https://github.com/kateburson/rps-multiplayer.git">+ View Code</a>
+                        </div>
+                    </figcaption>           
+                </figure>
+            </div>  
+
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                <figure class="effect-lily effect6">
+                    <img src="assets/images/screenShot2.png" alt="Rock Paper Diss"/>
+                    <figcaption>
+                        <div>
+                            <h2>LIRI Bot</h2>
+                            <p>command line node application</p>
+                            <a class="grey" target="new" href="https://github.com/kateburson/liri-node-app.git">+ View Code</a>
                         </div>
                     </figcaption>           
                 </figure>
             </div>  
 
         </div>
+
+        <footer class="footer">
     
+                <div id="copyright"><p>Copyright © 2019 Kate Burson</p></div>
+
+                <div id="social">
+                    <a href="https://www.instagram.com/kateburson/" target="new">
+                        <i class="fab fa-instagram" alt="instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kate-burson/" target="new">
+                        <i class="fab fa-linkedin-in" alt="linkedin"></i>
+                    </a>
+                </div>
+
+        </footer>
+
     </div>
-
-    <footer class="footer col-lg-10">
-
-            <div id="copyright"><p>Copyright © 2019 Kate Burson</p></div>
-
-            <div id="social">
-                <a href="https://www.instagram.com/kateburson/" target="new">
-                    <i class="fab fa-instagram" alt="instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/kate-burson/" target="new">
-                    <i class="fab fa-linkedin-in" alt="linkedin"></i>
-                </a>
-            </div>
-
-    </footer>
 
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -188,6 +206,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
     <script src="assets/effects.js"></script>
-          
-</body>
 
+</body>
