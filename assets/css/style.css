@@ -17,6 +17,36 @@ body {
     background-size: cover;
 }
 
+.medallion {
+    z-index: -1;
+	position: absolute;
+    max-width: 100%;
+	opacity: .75;
+	margin-top: -50%;
+	-moz-animation: 60s rotate infinite linear;
+  	-webkit-animation: 60s rotate infinite linear;
+	}
+
+@-moz-keyframes rotate {
+    0    { -moz-transform: rotate(0); } 
+    100% { -moz-transform: rotate(360deg); }  
+	}
+
+@-webkit-keyframes rotate {
+    0%   { -webkit-transform: rotate(0); }
+    100% { -webkit-transform: rotate(360deg); } 
+	}
+	
+@-ms-keyframes rotate {
+    0%   { -webkit-transform: rotate(0); }
+    100% { -webkit-transform: rotate(360deg); } 
+	}
+	
+@-o-keyframes rotate {
+    0%   { -webkit-transform: rotate(0); }
+    100% { -webkit-transform: rotate(360deg); } 
+    }
+    
 header {
     padding: 40px 0 25px 0; 
     margin: 0; 
