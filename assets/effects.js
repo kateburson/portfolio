@@ -6,3 +6,10 @@ $('#menu-button').on('click', function(){
         $('#menu').text('menu –');
     }
 });
+
+$('#undead').on('click', function(){
+    $('#imageOne').append('<img src="">)
+    $('#text').text(
+        ''
+    )
+})
