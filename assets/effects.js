@@ -107,7 +107,7 @@ function infographic() {
     $p.text(
         'This information design poster was created for print and is 24" x 36". It is a visual representation of the research I conducted on gun violence in America.'
     );
-    $($p).append('<br><a href="InfoDesign_Final.pdf" target="new">Info Design PDF</a>');
+    $($p).append('<br><a href="assets/images/infoDesign_Final.pdf" target="new">Info Design PDF</a>');
     $($p).prepend($back);
     $($row).append($p);
     var $right = $('<div class="col-lg-8">');
