@@ -67,7 +67,6 @@ function medEx() {
         'This business card and website is part of the branding I created for the Seattle based restaurant Mediterranean Express.'
     );
     $($p).prepend($back);
-    $($p).append('<br><a href="http://www.medexpress-seattle.com" target="new">Mediterranean Express Website</a>');
     $($row).append($p);
     var $right = $('<div class="col-lg-8">');
     var $img1 = $('<img class="col-lg-12">');
