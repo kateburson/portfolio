@@ -66,6 +66,11 @@ nav {
     margin: 0 15px;
 }
 
+.nav-item:hover, 
+.nav-item:active {
+    color: black;
+}
+
 .menu {
     width: 25%;
     height: auto;
@@ -211,12 +216,8 @@ a {
     font-size: 14pt;
 }
 
-a:hover {
+a:hover, a:active {
     text-decoration: none;
-    color: black;
-}
-
-a:active {
     color: black;
 }
 
