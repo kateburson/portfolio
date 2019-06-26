@@ -7,6 +7,7 @@ $('#menu-button').on('click', function(){
     }
 });
 
+$('#coach').on('click', coachRequirements);
 $('#undead').on('click', undead);
 $('#tweed').on('click', tweed);
 $('#medEx').on('click', medEx);
@@ -14,6 +15,23 @@ $('#fab').on('click', fab);
 $('#infographic').on('click', infographic);
 $('#cloud').on('click', cloud);
 
+function coachRequirements() {
+    $('.project').hide();
+    var $row = $('<div class="row">');
+    var $back = $('<a id="back" href="design.html"><< back</a><br>')
+    var $p = $('<p id="description" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">');
+    $p.text(
+        'Coach Requirements is an informational app on train parts and specifications. I created a user experience mockup for the app in Adobe XD.'
+    );
+    $($p).prepend($back);
+    $($row).append($p);
+    var $right = $('<div class="col-lg-8">');
+    var $video = $('<video class="col-lg-6" autoplay loop>');
+    $video.attr('src', 'assets/images/coachRequirements.mp4');
+    $($right).append($video);
+    $row.append($right);
+    $('#grid').append($row);
+}
 
 function undead() {
     $('.project').hide();
