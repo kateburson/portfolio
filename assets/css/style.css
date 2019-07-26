@@ -54,6 +54,10 @@ header {
     margin: 0; 
 }
 
+#menu-button {
+    width: 100%;
+}
+
 nav {
     height: auto;
     margin-top: -25px;
@@ -180,7 +184,7 @@ h1 {
     font-weight: lighter;
     text-transform: lowercase;
     color: black;
-    font-size: 36pt;
+    font-size: 42pt;
     text-align: center;
 }
 
