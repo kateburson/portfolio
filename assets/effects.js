@@ -7,6 +7,7 @@ $('#menu-button').on('click', function(){
     }
 });
 
+$('#signage').on('click', signage);
 $('#coach').on('click', coachRequirements);
 $('#undead').on('click', undead);
 $('#tweed').on('click', tweed);
@@ -14,6 +15,30 @@ $('#medEx').on('click', medEx);
 $('#fab').on('click', fab);
 $('#infographic').on('click', infographic);
 $('#cloud').on('click', cloud);
+
+function signage() {
+    $('.project').hide();
+    var $row = $('<div class="row">');
+    var $back = $('<a id="back" href="design.html"><< back</a><br>')
+    var $p = $('<p id="description" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">');
+    $p.text(
+        'These are some of the posters I designed for sales at Kasala. They were displayed in stores and printed at 22" x 36".'
+    );
+    $($p).prepend($back);
+    $($row).append($p);
+    var $right = $('<div class="col-lg-8">');
+    var $img1 = $('<img class="col-lg-12">');
+    $img1.attr('src', 'assets/images/FloorSampleClearance1.png');
+    var $img2 = $('<img class="col-lg-12">');
+    $img2.attr('src', 'assets/images/summerClearance.png');
+    var $img3 = $('<img class="col-lg-12">');
+    $img3.attr('src', 'assets/images/fallPreviewEvent.png');
+    var $img4 = $('<img class="col-lg-12">');
+    $img4.attr('src', 'assets/images/presidentsGoGetter.png');
+    $($right).append($img1, $img2, $img3, $img4);
+    $row.append($right);
+    $('#grid').append($row);
+}
 
 function coachRequirements() {
     $('.project').hide();
