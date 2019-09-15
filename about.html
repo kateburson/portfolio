@@ -27,27 +27,37 @@
 </head>
 
 <body> 
-<div class="medallion">
-    <img src="assets/images/medallion_white.png" width="100%"/>
-</div>
-<header>
-    <a href="index.html"> <h1>Kate Burson</h1></a>
-</header>
 
-<nav class="navbar navbar-expand-lg">
-    <button class="navbar-toggler menu" id="menu-button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <p id="menu">menu +</p>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav mx-auto">
-        <!-- <a class="nav-item nav-link" href="index.html">web</span></a> -->
-        <a class="nav-item nav-link" href="index.html">design</a>
-        <a class="nav-item nav-link" href="about.html" active>about</a>
-        <a class="nav-item nav-link" href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">contact</a>
-        </div>
+    <header>
+        <a href="index.html">
+            <h1>kate burson</h1>
+        </a>
+    </header>
+    
+    <div id="social">
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/kateburson/" target="new">
+                    <i class="fab fa-instagram" alt="instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/kate-burson/" target="new">
+                    <i class="fab fa-linkedin-in" alt="linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/kateburson">
+                    <i class="fab fa-github" alt="github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">
+                    <i class="far fa-envelope" alt="email"></i>
+                </a>
+            </li>
+        </ul>
     </div>
-</nav>
 
 <!-- modal for contact form -->
 <div class="modal fade modalContactForm" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">

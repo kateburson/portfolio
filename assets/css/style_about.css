@@ -62,7 +62,7 @@ img {
 
 @media (min-width: 768px) {
     .container-fluid { 
-        width: 90%;
+        max-width: 85%;
     }
 }
 

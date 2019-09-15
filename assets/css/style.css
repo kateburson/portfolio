@@ -19,77 +19,10 @@ body {
     max-width: 100%;
 }
 
-.medallion {
-    z-index: -1;
-	position: absolute;
-    max-width: 100%;
-	opacity: .5;
-	margin-top: -50%;
-	-moz-animation: 60s rotate infinite linear;
-  	-webkit-animation: 60s rotate infinite linear;
-	}
-
-@-moz-keyframes rotate {
-    0    { -moz-transform: rotate(0); } 
-    100% { -moz-transform: rotate(360deg); }  
-	}
-
-@-webkit-keyframes rotate {
-    0%   { -webkit-transform: rotate(0); }
-    100% { -webkit-transform: rotate(360deg); } 
-	}
-	
-@-ms-keyframes rotate {
-    0%   { -webkit-transform: rotate(0); }
-    100% { -webkit-transform: rotate(360deg); } 
-	}
-	
-@-o-keyframes rotate {
-    0%   { -webkit-transform: rotate(0); }
-    100% { -webkit-transform: rotate(360deg); } 
-    }
     
 header {
     padding: 40px 0 25px 0; 
     margin: 0; 
-}
-
-#menu-button {
-    width: 100%;
-}
-
-nav {
-    height: auto;
-    margin-top: -25px;
-    margin-bottom: 25px;
-    background-color: rgba(0,0,0,0);
-}
-
-.nav-item {
-    padding: 0 25px 25px 25px;
-    margin: 0 15px;
-}
-
-.nav-item:hover, 
-.nav-item:active {
-    color: black;
-}
-
-.menu {
-    width: 25%;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.menu:focus {
-    border: none;
-    box-shadow: none;
-    outline: none;
-}
-
-.navbar-nav {
-    text-align: center;
 }
 
 .modal {
@@ -174,8 +107,7 @@ button {
 }
 
 .container-fluid {
-    /* margin-top: 25px; */
-    width: 80%;
+    max-width: 85%;
 }
 
 
@@ -184,7 +116,7 @@ h1 {
     font-weight: lighter;
     text-transform: lowercase;
     color: black;
-    font-size: 42pt;
+    font-size: 36pt;
     text-align: center;
 }
 
@@ -192,6 +124,13 @@ h2 {
     font-family: "Cormorant Garamond", serif;
     font-weight: lighter;
     /* text-transform: lowercase; */
+}
+
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: lighter;
+    color: white;
+    size: 12pt;
 }
 
 hr {
@@ -207,7 +146,6 @@ ul {
 }
 
 li {
-    float:left;
     margin: 0 15px;
     text-align: center;
 }
@@ -301,18 +239,14 @@ p {
 }
 
 #social {
-    position: relative;
-    float: right;
-    right: 20px;
+    position: fixed;
     padding: 20px 0 10px 0;
 }
 
 i {
-    position: relative;
     color: black;
     font-size: 20px;
     padding: 10px;
-    float: left;
 }
 
 i:hover {
