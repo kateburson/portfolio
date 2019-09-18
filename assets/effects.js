@@ -92,11 +92,15 @@ function tweed() {
     $($row).append($p);
     var $right = $('<div class="col-lg-8">');
     var $img1 = $('<img class="col-xl-12">');
-    $img1.attr('src', 'assets/images/tweed.png');
+    $img1.attr('src', 'assets/images/cardFront.png');
     $($right).append($img1);
     var $img2 = $('<img class="col-xl-12">');
-    $img2.attr('src', 'assets/images/tweedidentity.png');
+    $img2.attr('src', 'assets/images/cardBack.png');
     $($right).append($img2);
+    $img3.attr('src', 'assets/images/letterhead.png');
+    $($right).append($img3);
+    $img4.attr('src', 'assets/images/letterheadDetail.png');
+    $($right).append($img4);
     $row.append($right);
     $('#grid').append($row);
 }

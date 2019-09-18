@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139178180-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139178180-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kate Burson | Package Design</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lato" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><h1>kate burson</h1></a>
+        <nav class="col-lg-6">
+            <a class="menu-item" href="index.html">design</a>
+            <a class="menu-item" href="about.html">about</a>
+            <a href="photo.html" class="menu-item">photography</a>
+        </nav>
+    </header>
+    
+    <div id="social">
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/kateburson/" target="new">
+                    <i class="fab fa-instagram" alt="instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/kate-burson/" target="new">
+                    <i class="fab fa-linkedin-in" alt="linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/kateburson">
+                    <i class="fab fa-github" alt="github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">
+                    <i class="far fa-envelope" alt="email"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+<!-- modal for contact form -->
+<div class="modal fade modalContactForm" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <div id="box-header">
+                <h2>Contact</h2>
+                <hr>
+            </div> <!--box-header-->
+            <div id="form-messages"></div>
+            
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label for="name" class="label">name</label><br>
+                    <input id="name" type="text" name="name" class="standard_input"/> 
+                </p>
+                <p>
+                    <label for="email" class="label">email</label><br>
+                    <input id="email" type="email" name="email" class="standard_input"/>
+                </p>
+                <p>
+                    <label for="subject" class="label">subject</label><br>
+                    <input id="subject" type="text" name="subject" class="standard_input"/>
+                </p>
+                <p>
+                    <label for="message" class="label">message</label><br>
+                    <textarea id="message" name="message" class="standard_input"></textarea>
+                </p>
+                <p>
+                    <button type="submit" id="submit">send</button>
+                    <div class="field">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-10 col-md-10 col-sm-10 col-10 center">
+  <div class="row">
+      <a class="padding" href="index.html"><img src="https://img.icons8.com/ios/50/000000/long-arrow-left.png"></a>
+  </div>
+
+  <div class="row">
+    <div class="left col-lg-4">
+      <div class="shadow padding space">
+        <h2>Package Design Project</h2>
+        <p>I designed this phone charger packaging to be a reusable phone-charging station. It is based on the saying, "My phone is dead," and is a coffin for dead phones while they charge.</p>
+      </div>
+      <img class="shadow space" src="./assets/images/ChargerLabel.jpg" alt="Phone Charger Package Design">
+      <img class="shadow space" src="./assets/images/coffincutout.jpg" alt="Phone Charger Package Design">
+    </div>
+    <div class="right col-lg-8">
+      <img class="space" src="./assets/images/undeadChargers.jpg" alt="Label Design">
+      <img class="space" src="./assets/images/undeadLabel.png" alt="Label Detail">
+    </div>
+  </div>
+</div>
+  
+</body>
+</html>

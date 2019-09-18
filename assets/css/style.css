@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-html {
+/* html {
     min-height: 100%;
     max-height: 100%;
     max-width: 100%;
@@ -17,12 +17,21 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
-}
+} */
 
     
 header {
-    padding: 40px 0 25px 0; 
+    padding: 40px 0; 
     margin: 0; 
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-item {
+    padding: 0 20px;
 }
 
 .modal {
@@ -79,7 +88,7 @@ header {
 }
 
 button {
-    font-family: "Cormorant Garamond", serif;
+    font-family: 'Lato', sans-serif;
     font-weight: lighter;
     text-transform: lowercase;
     font-size: 14pt;
@@ -91,7 +100,7 @@ button {
     background-color: rgb(179, 228, 228, 0);
     border: black solid 1pt;
     padding-bottom: 2.5px;
-    font-family: "Cormorant Garamond", serif;
+    font-family: 'Lato', sans-serif;
     font-weight: lighter;
     text-transform: lowercase;
     font-size: 14pt;
@@ -107,7 +116,7 @@ button {
 }
 
 .container-fluid {
-    max-width: 85%;
+    max-width: 100%;
 }
 
 
@@ -121,13 +130,12 @@ h1 {
 }
 
 h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: lighter;
-    /* text-transform: lowercase; */
+    font-family: "Lato", sans-serif;
+    font-size: 20pt;
 }
 
 h3 {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Lato", sans-serif;
     font-weight: lighter;
     color: white;
     size: 12pt;
@@ -153,19 +161,21 @@ li {
 a {
     color: grey;
     text-decoration: none;
-    font-family: "Cormorant Garamond", serif;
-    text-transform: lowercase;
-    font-size: 14pt;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 10pt;
+    letter-spacing: 1px;
 }
 
-a:hover, a:active {
+a:hover {
     text-decoration: none;
     color: black;
-}
+} 
 
 p {
-    font-size: 12pt;
-    line-height: 14pt;
+    font-size: 14pt;
+    line-height: 1.5;
+    font-family: "Cormorant Garamond", serif;
 }
 
 .row {
@@ -217,13 +227,6 @@ figure {
             transform:skew(8deg) rotate(3deg);
 }
 
-p {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 14pt;
-    line-height: 1.75;
-    color: black;
-}
-
 .footer {
     position: relative;
     height: auto;
@@ -233,9 +236,9 @@ p {
 
 #copyright {
     position: relative;
-    float: left;
     left: 20px;
     padding: 20px 0 10px 0;
+    text-align: center;
 }
 
 #social {
@@ -266,8 +269,8 @@ figure.effect-lily img {
 
 figure.effect-lily figcaption {
     color: white;
-    font-size: 18pt;
-    font-family: "Cormorant Garamond", serif;
+    font-size: 10pt;
+    font-family: 'Lato', sans-serif;
     font-weight: normal;
     text-align: left;
 }
@@ -301,9 +304,16 @@ figure.effect-lily h2 {
 }
 
 
-figure.effect-lily p,
-figure.effect-lily a {
+figure.effect-lily p {
     font-size: 14pt;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+    transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily a {
+    font-size: 10pt;
     line-height: 14pt;
     opacity: 0;
     -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
@@ -363,3 +373,36 @@ figure.effect-lily:hover p {
         width: 100%;
     }
   }
+
+  #left {
+      float: left;
+  }
+
+  img {
+      max-width: 100%;
+      padding: 0;
+  }
+
+  #right {
+      float: right;
+  }
+
+.center {
+    margin: 0 auto;
+}
+
+.padding {
+    padding: 25px;
+}
+
+.space {
+    margin-bottom: 25px;
+}
+
+.shadow {
+    max-width: 100%;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
