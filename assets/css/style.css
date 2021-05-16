@@ -25,14 +25,6 @@ header {
     margin: 0; 
 }
 
-nav {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.menu-item {
-    padding: 0 20px;
-}
 
 .modal {
     background-color: rgb(179, 228, 228, .5);
@@ -87,12 +79,6 @@ nav {
     box-shadow: none;
 }
 
-button {
-    font-family: 'Lato', sans-serif;
-    font-weight: lighter;
-    text-transform: lowercase;
-    font-size: 14pt;
-}
 
 #submit {
     margin-top: 50px;
@@ -130,8 +116,9 @@ h1 {
 }
 
 h2 {
-    font-family: "Lato", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: 20pt;
+    text-transform: lowercase;
 }
 
 h3 {
@@ -146,6 +133,11 @@ hr {
     margin-top: 0;
 }
 
+p {
+    font-family:lato, sans-serif;
+}
+
+
 ul {
     list-style: none;
     position: relative;
@@ -158,24 +150,8 @@ li {
     text-align: center;
 }
 
-a {
-    color: grey;
+a.kateburson:hover {
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    font-size: 10pt;
-    letter-spacing: 1px;
-}
-
-a:hover {
-    text-decoration: none;
-    color: black;
-} 
-
-p {
-    font-size: 14pt;
-    line-height: 1.5;
-    font-family: "Cormorant Garamond", serif;
 }
 
 .row {
@@ -253,7 +229,7 @@ i {
 }
 
 i:hover {
-    color: rgba(0,0,0,.5);
+    color: tomato;
 }
 
 figure.effect-lily img {

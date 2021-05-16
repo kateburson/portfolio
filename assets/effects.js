@@ -186,3 +186,11 @@ function cloud() {
     $row.append($right);
     $('#grid').append($row);
 }
+
+
+$(document).ready(function() {
+    $('.ph-line-nav').on('click', 'a', function() {
+        $('.ph-line-nav a').removeClass('active');
+        $(this).addClass('active');
+    });
+});
