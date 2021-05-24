@@ -39,7 +39,7 @@
       width: /*55px*/ 33%;
       height: 2px;
       bottom: 5px;
-      background: tomato;
+      background: rgb(179, 228, 228);
       margin-left:/*-45px*/auto;
       margin-right:/*-45px*/auto;
   }
