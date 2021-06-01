@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139178180-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139178180-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kate Burson | Signage</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lato" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="assets/css/navstyle.css">
+</head>
+
+<body>
+    <header>
+        <a class="kateburson" href="index.html"><h1>kate burson</h1></a>
+        <div class="width">
+            <nav class="ph-line-nav">
+                <a class="active main-nav" href="index.html">design</a>
+                <a class="main-nav" href="about.html">about</a>
+                <a class="main-nav" href="photo.html">photography</a>
+                <div class="effect"></div>
+            </nav>
+            </div>
+    </header>
+  
+  <div id="social">
+      <ul>
+          <li>
+              <a href="https://www.instagram.com/kateburson/" target="new">
+                  <i class="fab fa-instagram" alt="instagram"></i>
+              </a>
+          </li>
+          <li>
+              <a href="https://www.linkedin.com/in/kate-burson/" target="new">
+                  <i class="fab fa-linkedin-in" alt="linkedin"></i>
+              </a>
+          </li>
+          <li>
+              <a href="https://github.com/kateburson">
+                  <i class="fab fa-github" alt="github"></i>
+              </a>
+          </li>
+          <li>
+              <a href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">
+                  <i class="far fa-envelope" alt="email"></i>
+              </a>
+          </li>
+      </ul>
+  </div>
+
+  <!-- modal for contact form -->
+  <div class="modal fade modalContactForm" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+              <div id="box-header">
+                  <h2>Contact</h2>
+                  <hr>
+              </div> <!--box-header-->
+              <div id="form-messages"></div>
+              
+              <form name="contact" method="POST" data-netlify="true">
+                  <p>
+                      <label for="name" class="label">name</label><br>
+                      <input id="name" type="text" name="name" class="standard_input"/> 
+                  </p>
+                  <p>
+                      <label for="email" class="label">email</label><br>
+                      <input id="email" type="email" name="email" class="standard_input"/>
+                  </p>
+                  <p>
+                      <label for="subject" class="label">subject</label><br>
+                      <input id="subject" type="text" name="subject" class="standard_input"/>
+                  </p>
+                  <p>
+                      <label for="message" class="label">message</label><br>
+                      <textarea id="message" name="message" class="standard_input"></textarea>
+                  </p>
+                  <p>
+                      <button type="submit" id="submit">send</button>
+                      <div class="field">
+                          <div data-netlify-recaptcha="true"></div>
+                      </div>
+                  </p>
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-lg-10 col-md-10 col-sm-10 col-10 center">
+    <div class="row">
+        <a class="padding" href="index.html"><img src="https://img.icons8.com/ios/50/000000/long-arrow-left.png"></a>
+    </div>
+
+    <div class="row">
+      <div class="left col-lg-4">
+        <div class="padding space"> 
+          <h2>GreaterZion.com Homepage</h2>
+          <br>
+          <p>Working as part of a growth-driven design team on the <a class="gz" tartet="new" href="GreaterZion.com">greaterzion.com</a> site, I stragetized how to make ititerative improvements that would boost the performance and user experience if the site. One of the first things we tackled was restructuring the sitemap and navigation to allow users to find what they are looking for while also exposing them to inspirational content. 
+            <br><br>
+            The homepage was the first page to be completely re-designed in an effort to present Greater Zion as a region that encompasses more than just Zion National park. 
+            The new design recoginzes that many users come to the site specifically for National Park information while aiming to inspire those visitors to explore more of the region during their stay. 
+            From large-scale, informational image sliders showcasing the unique landscape to seamless blog article integratoin, users can find both what they are lookinng for and be inspired to delve deeper into the area.</p>
+        </div>
+      </div>
+      <div class="right col-lg-8">
+        <img class="space shadow" src="./assets/images/Greater-Zion-Con.jpg" alt="Greater Zion Homepage">
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+      <div id="copyright"><p>Copyright © 2021 Kate Burson</p></div>
+  </footer>
+</body>
+</html>
