@@ -258,6 +258,10 @@ i:hover {
     color: rgb(179, 228, 228);
 }
 
+#features {
+    margin: 0 auto;
+}
+
 figure.effect-lily img {
     max-width: 100%;
     width: -webkit-calc(100% + 50px);
@@ -384,8 +388,7 @@ figure.effect-lily:hover p {
     .container-fluid {
         width: 100%;
     }
-  }
-
+    
   #left {
       float: left;
   }
@@ -417,4 +420,5 @@ figure.effect-lily:hover p {
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
 }

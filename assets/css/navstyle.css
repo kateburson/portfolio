@@ -1,5 +1,5 @@
 .width {
-    width: 700px;
+    width: 60%;
     margin: 0 auto;
   }
   nav {
@@ -69,4 +69,30 @@ nav a:nth-child(2):hover ~ .effect {
 nav a:nth-child(3):hover ~ .effect {
     left: 66.66%;
     /* the middle of the third <a> */
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+.container-fluid {
+    width: 100%;
+}
+
+nav  {
+    max-width: 100%;
+}
+
+nav a.main-nav {
+    float: none;
+    margin: 0 auto;
+}
+
+.ph-line-nav .effect {
+    width: 0;
+}
+
+a.main-nav.active {
+    text-decoration: underline;
+}
+
 }
