@@ -3,12 +3,13 @@
     padding: 0;
 }
 
-/* html {
+html {
     min-height: 100%;
     max-height: 100%;
     max-width: 100%;
 }
 
+/*
 body {
     background-image: linear-gradient(to top,rgb(179, 228, 228, .8), white);
     max-height: 100%; 
@@ -183,6 +184,7 @@ a.kateburson:hover {
 .row {
     height: auto;
     margin: 0 auto;
+    max-width: 90%;
 }
 
 #clearfix {
@@ -260,6 +262,7 @@ i:hover {
 
 #features {
     margin: 0 auto;
+    max-width: 100%;
 }
 
 figure.effect-lily img {
@@ -408,10 +411,12 @@ figure.effect-lily:hover p {
 
 .padding {
     padding: 25px;
+    max-width: 100%;
 }
 
 .space {
     margin-bottom: 25px;
+    max-width: 100%;
 }
 
 .shadow {
