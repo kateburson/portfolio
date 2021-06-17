@@ -1,7 +1,7 @@
-.width {
+.ph-line-nav {
     width: 60%;
     margin: 0 auto;
-  }
+}
 
   nav {
       margin-top:20px;
@@ -16,7 +16,7 @@
       font-size: 14px;
       letter-spacing: .1rem;
       text-transform: uppercase;
-      text-align:center;
+      text-align: center;
       display: block;
       float: left;
       padding: 2% 0;

@@ -9,23 +9,10 @@ html {
     max-width: 100%;
 }
 
-/*
-body {
-    background-image: linear-gradient(to top,rgb(179, 228, 228, .8), white);
-    max-height: 100%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-} */
-
-    
 header {
     padding: 40px 0; 
     margin: 0; 
 }
-
 
 .modal {
     background-color: rgb(179, 228, 228, .5);
@@ -103,6 +90,11 @@ header {
 }
 
 .container-fluid {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+img {
     max-width: 100%;
 }
 
@@ -136,32 +128,42 @@ hr {
 
 p {
     font-family: "Lato", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: lighter;
-    line-height: 150% ;
+    line-height: 150%;
 }
 
 a {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+figure.effect6 figcaption div > a {
     font-family: "Lato", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: white;
+    text-decoration: none;
 }
 
-a:hover {
+figure.effect6 figcaption div > a:hover {
     color: rgb(179, 228, 228);
     text-decoration: none;
 }
 
-a.gz {
-    color: black;
-    text-transform: none;
-    text-decoration: underline;
-    letter-spacing: normal;
+header > a {
+    text-decoration: none;
 }
 
-hr {
+hr > .effect6 {
     border: 1px, solid, white;
 }
 
@@ -177,14 +179,9 @@ li {
     text-align: center;
 }
 
-a.kateburson:hover {
-    text-decoration: none;
-}
-
 .row {
     height: auto;
     margin: 30px auto;
-    max-width: 90%;
 }
 
 #clearfix {
@@ -258,11 +255,6 @@ i {
 
 i:hover {
     color: rgb(179, 228, 228);
-}
-
-#features {
-    margin: 0 auto;
-    max-width: 100%;
 }
 
 figure.effect-lily img {
@@ -383,30 +375,31 @@ figure.effect-lily:hover p {
     transition-duration: 0.35s;
 }
 
-@media only screen and (max-width: 576px) {
-    figure.effect-lily figcaption > div {
-        padding: 15px;
-    }
+@media only screen and (max-width: 700px) {
 
-    .container-fluid {
-        width: 100%;
-    }
+figure.effect-lily figcaption > div {
+    padding: 15px;
+}
+
+.container-fluid {
+    max-width: 90%;
+    margin: 0 auto;
+}
     
-  #left {
-      float: left;
-  }
+.left {
+    float: left;
+}
 
-  img {
-      max-width: 100%;
-      margin: 0 auto 25px auto;
-  }
-
-  #right {
-      float: right;
-  }
+.right {
+    float: right;
+}
 
 .center {
     margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
 }
 
 .padding {
@@ -416,7 +409,6 @@ figure.effect-lily:hover p {
 
 .space {
     margin-bottom: 25px;
-    max-width: 100%;
 }
 
 .shadow {
