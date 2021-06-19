@@ -383,14 +383,18 @@ figure.effect-lily figcaption > div {
 
 #social { 
     position: relative;
-    display: block;
     width: 60%;
     margin: 0 auto;
 } 
 
+ul {
+    width: 100%;
+}
+
 li {
+    width: 25%;
+    margin: 0 auto;
     float: left;
-    margin: 0 5px 20px 0;
 }
 
 .container-fluid {
