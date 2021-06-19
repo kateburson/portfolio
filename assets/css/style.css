@@ -381,8 +381,22 @@ figure.effect-lily figcaption > div {
     padding: 15px;
 }
 
+#social { 
+    position: relative;
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+} 
+
+li {
+    float: left;
+    margin: 0 5px 20px 0;
+}
+
 .container-fluid {
-    max-width: 90%;
+    display: inline-block;
+    min-width: 100%;
+    float: none;
     margin: 0 auto;
 }
     
@@ -418,4 +432,7 @@ img {
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+
+
+
 }
